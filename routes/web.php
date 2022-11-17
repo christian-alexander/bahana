@@ -11,10 +11,5 @@
 |
 */
 
-Route::get('/form-audit-cargo', function () {
-    return view('form-audit-cargo');
-});
-
-Route::get('foo', function () {
-    return 'Hello World';
-});
+Route::get('/form-audit-cargo', 'SoundingCargo@show');
+Route::post('/form-audit-cargo', 'SoundingCargo@save');
