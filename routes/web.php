@@ -13,3 +13,6 @@
 
 Route::get('/form-audit-cargo', 'SoundingCargo@show');
 Route::post('/form-audit-cargo', 'SoundingCargo@save');
+
+Route::get('/form-audit-tanki', 'AuditTankiController@show');
+Route::post('/form-audit-tanki', 'AuditTankiController@save');
